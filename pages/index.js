@@ -23,13 +23,13 @@ function HomePage() {
                 <meta name="description" content="Site de estudo React" />
                 <meta name="author" content="André Luiz Gomes Pereira" />
             </Head>
-            <Navbar color="secondary" dark expand="md">
+            <Navbar color="secondary" dark expand="md" className="fixed-top">
                 <Container>
                     <NavbarBrand href="/">André Luiz</NavbarBrand>
                     <Collapse navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Componentes</NavLink>
+                                <NavLink href="/">Portifolio</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/AndreLuizGomesPereira">GitHub - André Luiz</NavLink>
@@ -38,14 +38,26 @@ function HomePage() {
                     </Collapse>
                 </Container>
             </Navbar>
+            <Jumbotron fluid className="descr-top">
+                <style>{`.descr-top{
+        background-color: #000;
+        color: #fff;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        margin-bottom: 0rem !important;
+    }`}</style>
+                <Container className="text-center">
+                    <h1 className="display-4 mb-4">Temos a solução que a sua empresa precisa!</h1>
+                    <p className="lead mb-4">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <p className="lead">
+                        <Button outline color="warning" size="lg">Entre em contato</Button>
+                    </p>
+                </Container>
+            </Jumbotron>
             <Jumbotron>
-                <h1 className="display-3">Hello, world!</h1>
-                <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr className="my-2" />
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p className="lead">
-                    <Button color="primary">Learn More</Button>
-                </p>
+                <Container>
+
+                </Container>
             </Jumbotron>
         </div>
     )
