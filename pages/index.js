@@ -1,5 +1,7 @@
 import React from 'react';
+import Head from 'next/head';
 import {
+    Container,
     Jumbotron,
     Button,
     Collapse,
@@ -16,18 +18,25 @@ function HomePage() {
 
     return (
         <div>
+            <Head>
+                <title>Home - André Luiz</title>
+                <meta name="description" content="Site de estudo React" />
+                <meta name="author" content="André Luiz Gomes Pereira" />
+            </Head>
             <Navbar color="secondary" dark expand="md">
-                <NavbarBrand href="/">André Luiz</NavbarBrand>
-                <Collapse navbar>
-                    <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/components/">Componentes</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/AndreLuizGomesPereira">GitHub - André Luiz</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
+                <Container>
+                    <NavbarBrand href="/">André Luiz</NavbarBrand>
+                    <Collapse navbar>
+                        <Nav className="mr-auto" navbar>
+                            <NavItem>
+                                <NavLink href="/components/">Componentes</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="https://github.com/AndreLuizGomesPereira">GitHub - André Luiz</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Container>
             </Navbar>
             <Jumbotron>
                 <h1 className="display-3">Hello, world!</h1>
