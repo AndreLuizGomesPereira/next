@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
-    res.send('Hello World')
+app.get('/home', (req, res) => {
+    res.json({
+        error: false,
+        message: "Informações da página HOME!"
+    })
 });
 
 app.listen(8080, () => {
