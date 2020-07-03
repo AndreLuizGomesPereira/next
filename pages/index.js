@@ -30,11 +30,11 @@ function HomePage() {
             </Head>
             <Navbar color="secondary" dark expand="md" className="fixed-top">
                 <Container>
-                    <NavbarBrand href="/">André Luiz</NavbarBrand>
+                    <NavbarBrand href="/">AleSYS</NavbarBrand>
                     <Collapse navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Portifolio</NavLink>
+                                <NavLink href="/#portifolio">Portifólio</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/AndreLuizGomesPereira">GitHub - André Luiz</NavLink>
@@ -108,12 +108,17 @@ function HomePage() {
             </Jumbotron>
             <Jumbotron fluid className="portifolio">
                 <style>{`.portifolio{
-    background-color: #f8f9fa;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-bottom: 0rem !important;
-}`}</style>
+                    background-color: #f8f9fa;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    margin-bottom: 0rem !important;
+                    position: relative;
+                }.portifolio-link{
+                    position: absolute;
+                    top: 0;
+                }`}</style>
                 <Container className="text-center">
+                    <a name="portifolio" className="portifolio-link" />
                     <div>
                         <h2 className="display-4">Portifólio</h2>
                         <p className="lead pb-4">Melhor portifólio do mercado.</p>
@@ -174,6 +179,22 @@ function HomePage() {
                             </div>
                         </div>
                     </div>
+                </Container>
+            </Jumbotron>
+            <Jumbotron fluid className="rodape">
+                <style>{`.rodape{
+    background-color: #000;
+    color: #fff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0rem !important;
+}`}</style>
+                <Container className="text-center">
+                    <footer className="footer mt-auto py-3">
+                        <div className="container">
+                            <span className="text-muted">AleSYS - Sitemas</span>
+                        </div>
+                    </footer>
                 </Container>
             </Jumbotron>
         </div>
