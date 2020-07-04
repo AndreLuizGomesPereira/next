@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "node index.js",
+    "heroku-postbuild": "ng build --prod"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,8 @@
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "reactstrap": "^8.5.1"
+    "reactstrap": "^8.5.1",
+    "sass": "^1.26.9",
+    "webpack": "^4.43.0"
   }
 }

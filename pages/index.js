@@ -30,7 +30,7 @@ function HomePage() {
             </Head>
             <Navbar color="secondary" dark expand="md" className="fixed-top">
                 <Container>
-                    <NavbarBrand href="/">AleSYS</NavbarBrand>
+                    <NavbarBrand href="/">aleSYS</NavbarBrand>
                     <Collapse navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
